@@ -6,7 +6,7 @@ module.exports = {
 
   // telling jest how to load our modules like node_modules, so without to give
   // the relative path
-  moduleDirectories: ['node_modules', path.join(__dirname, 'src'), 'shared'],
+  moduleDirectories: ['node_modules', path.join(__dirname, 'src'), 'shared', path.join(__dirname, 'test')],
   moduleNameMapper: {
     // CONFIG necessary fif you use css module
     //return a string for the path that was accessed for that module
