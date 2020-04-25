@@ -23,5 +23,8 @@ module.exports = {
   setupFilesAfterEnv: ['@testing-library/jest-dom/extend-expect'],
   // necessary if you use your css in js (emotion, css-js, glamorous ...)
   // to see the css added in your snapshot
-  snapshotSerializers: ['jest-emotion']
+  snapshotSerializers: ['jest-emotion'],
+  // precising what to look for the test coverage, make sure to exclude
+  //all our test files and test utils
+  collectCoverageFrom: ['**/src/**/*.js']
 }
