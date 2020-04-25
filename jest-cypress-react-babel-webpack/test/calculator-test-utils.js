@@ -4,12 +4,11 @@ import {render as rtlRender} from '@testing-library/react'
 import {ThemeProvider} from 'emotion-theming'
 import * as themes from '../src/themes'
 
-function render(ui, {theme = themes.dark, ...options}) {
+function render(ui, {theme = themes.dark, ...options} = {}) {
   function Wrapper({children}) {
     return <ThemeProvider theme={theme}>{children}</ThemeProvider>
   }
-
-  Wrapper.prototype = {
+  Wrapper.propTypes = {
     children: PropTypes.node,
   }
 
@@ -19,4 +18,3 @@ function render(ui, {theme = themes.dark, ...options}) {
 export * from '@testing-library/react'
 // override the built-in render with our own
 export {render}
-
