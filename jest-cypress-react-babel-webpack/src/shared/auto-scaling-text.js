@@ -3,7 +3,9 @@ import PropTypes from 'prop-types'
 import styles from './auto-scaling-text.module.css'
 
 function getScale(node) {
-  debugger
+  // we have set jest to be able to open our browser inspector
+  // and debug or test, just uncomment the debugger to check it
+  // debugger
   if (!node) {
     return 1
   }
