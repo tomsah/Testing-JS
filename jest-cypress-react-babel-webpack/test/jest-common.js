@@ -13,6 +13,6 @@ module.exports = {
     '\\.css$': require.resolve('./style-mock.js'),
   },
   // allow you to choose between your different config on watch mode
-  // e.g: run only client or server
+  // e.g: run only client or server 
   watchPlugins: ['jest-watch-select-projects']
 }
