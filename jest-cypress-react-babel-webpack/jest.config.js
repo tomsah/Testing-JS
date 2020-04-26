@@ -20,5 +20,5 @@ module.exports = {
   },
   //allow to run both of our test environment (node / browser) by
   //pointing at 2 diff jest config
-  projects: ['./test/jest.client.js', './test/jest.server.js']
+  projects: ['./test/jest.lint.js','./test/jest.client.js', './test/jest.server.js']
 }

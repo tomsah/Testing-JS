@@ -17,6 +17,11 @@
     "validate": "npm run lint && npm run test && npm run build",
     "setup": "npm install && npm run validate"
   },
+  "jest-runner-eslint": {
+    "cliOptions": {
+      "ignorePath": "./.gitignore"
+    }
+  },
   "keywords": [],
   "author": "Kent C. Dodds <kent@doddsfamily.us> (http://kentcdodds.com/)",
   "license": "GPL-3.0",
